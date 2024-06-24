@@ -7,7 +7,7 @@
 </br>git remote add origin https://github.com/yk827/StudyPython.git
 </br>git push -u origin main
 
-</br></br></br>
+</br></br>
 
 #这才是真的readme
 </br>PythonStudyFromBilibili-Link(https://space.bilibili.com/402780815/channel/seriesdetail?sid=2762019)
