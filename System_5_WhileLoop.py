@@ -26,8 +26,6 @@ def Price_game(i):
             break
     print("欢迎再次参赛")
 
-Price_game(3)
-
 
 #另一种规则
 while True:
