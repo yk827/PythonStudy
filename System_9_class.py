@@ -1,5 +1,7 @@
 import random
 import time
+import sys
+import select
 
 print("欢迎来到游戏世界！")
 
@@ -72,6 +74,9 @@ while True:
             print("")
             time.sleep(3)
 
+            while sys.stdin in select.select([sys.stdin], [], [], 0)[0]: # 防止输入无效字符导致程序卡死,在sleep等待期间不读取玩家的输入
+                sys.stdin.readline()
+
         defense_option = int(input("请输入你的防御方式1(防御)2(闪避)："))
         if defense_option not in [1,2]:
             print("无效的操作，请重新输入！")
@@ -89,6 +94,10 @@ while True:
             print(f"玩家{Player_b.name}的剩余血量为{Player_b.hp}！")
             print("")
             time.sleep(3)
+
+            while sys.stdin in select.select([sys.stdin], [], [], 0)[0]:
+                sys.stdin.readline()
+
 
     again_choice = input("是否继续游戏？(y/n)：")
     if again_choice.lower() == 'n':
