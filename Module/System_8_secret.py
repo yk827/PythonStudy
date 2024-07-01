@@ -6,12 +6,12 @@ alp_u = string.ascii_uppercase#大写字母
 chac = string.ascii_letters#产生英文字母
 
 Secret1 =list(num+chac)
-random.shuffle(Secret1)
+random.shuffle(Secret1) #随机打乱，shuffle是对列表进行洗牌操作
 print(Secret1)
 
 
 Secret2 =num+chac
-random.shuffle(list(Secret2))
+random.shuffle(list(Secret2))   #随机打乱，shuffle是对列表进行洗牌操作，list()是将字符串转换为列表
 print(Secret2)
 
 length = input("请输入密码长度：")
