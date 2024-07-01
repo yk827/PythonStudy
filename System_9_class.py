@@ -1,4 +1,7 @@
 import random
+import time
+
+print("欢迎来到游戏世界！")
 
 class Player_default:
     hp = 100
@@ -67,6 +70,7 @@ while True:
             print(f"玩家{Player_a.name}的剩余血量为{Player_a.hp}！")
             print(f"玩家{Player_b.name}的剩余血量为{Player_b.hp}！")
             print("")
+            time.sleep(3)
 
         defense_option = int(input("请输入你的防御方式1(防御)2(闪避)："))
         if defense_option not in [1,2]:
@@ -84,6 +88,7 @@ while True:
             print(f"玩家{Player_a.name}的剩余血量为{Player_a.hp}！")
             print(f"玩家{Player_b.name}的剩余血量为{Player_b.hp}！")
             print("")
+            time.sleep(3)
 
     again_choice = input("是否继续游戏？(y/n)：")
     if again_choice.lower() == 'n':
